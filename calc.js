@@ -1,4 +1,5 @@
 let amount, principal, rate, number_of_payments, b;
+
 function calculate() {
     principal = document.getElementById("principal").value;
     number_of_payments = document.getElementById("number_of_payments").value;
@@ -11,9 +12,9 @@ function calculate() {
     console.log(number_of_payments);
     console.log(rate);
 
-    b = Math.pow((1 +( rate * 0.01)/12), number_of_payments);
+    b = Math.pow((1 +( rate * 0.01)/12), number_of_payments*12);
     amount = principal * (((rate * 0.01)/12 * b) / (b - 1));
     console.log(b);
     console.log(amount);
-    document.getElementById("display").innerHTML = "The Payment Amount is $" + amount.toFixed(2);
+    document.getElementById("paymentAmount").innerHTML = amount.toFixed(2);
 }
