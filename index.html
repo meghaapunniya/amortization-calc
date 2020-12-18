@@ -22,28 +22,27 @@
                 style="background-color:rgb(46, 46, 129);color:honeydew;font-weight: bolder;text-align: center;">
                 Amortization
                 Payment Calculator</div>
-            <div class="card-body ">
-                <div style="padding-left:15px;padding-top: 5px;"> Loan Amount,<label
-                        style="font-style: italic;font-weight: bold;">P </label> in $ <span><input id="principal"
-                            type="number" min="0" style="font-weight: bold;color:rgb(64, 64, 150)"
-                            onkeypress="return event.charCode >= 48"></div>
-                <div style="padding-left:15px"> <label>Interest Rate, </label><span>r</span> <input id="rate"
-                        type="number" min="0" style="font-weight: bold;color:rgb(64, 64, 150)"
-                        onkeypress="return event.charCode >= 48"> 0.01 = 1% </div>
-                <div style="padding-left:15px"> <label>Number of Payments,</label><span>n</span> <input
-                        id="number_of_payments" type="number" min="0" style="font-weight: bold;color:rgb(64, 64, 150)"
-                        onkeypress="return event.charCode >= 48">
+            <div class="card-body " style="vertical-align: middle;">
+                <div style="padding-left:8px;padding-top: 5px; text-align: center;"> Loan Amount,<label
+                        style="font-style: italic;font-weight: bold;">P </label> <span><input id="principal" 
+                            type="number" min="0" style="font-weight: bold; width: 150px;"
+                            onkeypress="return event.charCode >= 46"></div>
+                <div style="padding-left:90px;text-align: center;"><label>Interest Rate, </label><span>r</span> <input id="rate"
+                        type="number" min="0" style="font-weight: bold;width: 150px;"
+                        onkeypress="return event.charCode >= 46"> 0.01 = 1% </div>
+                <div style="padding-right:70px;text-align: center;padding-left: 25px;"> <label>Number of Payments,</label><span>n</span> <input
+                        id="number_of_payments" type="number" min="0" style="font-weight: bold;width: 110px;"
+                        onkeypress="return event.charCode >= 46">
                     years
                 </div>
                 <div style="padding-top:10px;padding-left:200px;"><button
                         style="background-color:#f5f5f5;align-content: center; " onclick="calculate()">Calculate
                     </button>
                 </div>
-                <div style="padding-top: 5px;"><label style="padding-left:12px;">Payment Amount,</label>
+                <div style="padding-top: 5px;text-align: center;padding-right: 40px;"><label style="padding-left:12px;">Payment Amount,</label>
                     <span style="font-weight: bold;font-style: italic;">A
-                    </span> in $ <span style="color: green;font-style: normal;"><button
-                            style="font-weight: bold;color: green;" id="paymentAmount" type="button"
-                            class="btn btn-lg btn-outline-dark disabled"></button>
+                    </span> <span style="color: green;font-style: normal;"><input style="font-weight: bold;color: green;"
+                            id="paymentAmount">
 
                 </div>
 
@@ -54,7 +53,7 @@
             </div>
         </div>
 
-
+    
     </div>
 
 
