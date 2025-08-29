@@ -19,7 +19,7 @@ input {
   display: inline-block;
 }
 
-input[type="button"] {
+input[type="button"] { /* double quotes for element */
   text-align: center;
   width: auto;
   margin: 10px;
