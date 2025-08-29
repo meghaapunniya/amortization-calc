@@ -1,0 +1,34 @@
+version: 2.1
+
+jobs:
+  lint:
+    docker:
+      - image: cimg/node:18.17  # Official CircleCI Node.js image
+    steps:
+      - checkout
+
+      - run:
+          name: Install Node.js dependencies
+          command: |
+            npm ci
+
+      - run:
+          name: Lint JavaScript with ESLint
+          command: |
+            npm run lint:js
+
+      - run:
+          name: Lint HTML with HTMLHint
+          command: |
+            npm run lint:html
+
+      - run:
+          name: Lint CSS with Stylelint
+          command: |
+            npm run lint:css
+
+workflows:
+  version: 2
+  lint-and-check:
+    jobs:
+      - lint

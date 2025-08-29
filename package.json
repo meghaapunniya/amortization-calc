@@ -1,0 +1,17 @@
+{
+  "name": "amortization-calculator",
+  "version": "1.0.0",
+  "description": "Simple HTML/CSS/JS Amortization Calculator",
+  "scripts": {
+    "lint:js": "eslint ./calc.js",
+    "lint:css": "stylelint ./styles.css",
+    "lint:html": "htmlhint ./index.html",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "htmlhint": "^1.1.5",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

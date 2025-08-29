@@ -16,5 +16,5 @@ function calculate() {
     amount = principal * (((rate * 0.01)/12 * b) / (b - 1));
     console.log(b);
     console.log(amount);
-    document.getElementById("paymentAmount").innerHTML = amount.toFixed(2);
+    document.getElementById("payment-amount").innerHTML = amount.toFixed(2);
 }

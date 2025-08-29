@@ -14,24 +14,24 @@ input {
   height: 40px;
   width: 150px;
   padding-top: 5px;
-  color: rgb(67, 67, 148);
+  color: rgb(67 67 148); /* modern color-function notation */
   border-color: black;
   display: inline-block;
 }
 
-input[type=button] {
+input[type="button"] { /* double quotes for element */
   text-align: center;
   width: auto;
   margin: 10px;
-
 }
 
-#paymentAmount {
+#payment-amount { /* kebab-case for ID selector */
   border-width: 2px;
-  border-style: solid black;
+  border-style: solid;
+  border-color: black;
 }
 
-button[id="paymentAmount"] {
+button[id="payment-amount"] {
   height: 40px;
   width: 150px;
 }
